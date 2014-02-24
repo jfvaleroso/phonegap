@@ -20,7 +20,7 @@ var app = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();
-        this.colorchange();
+     
     },
     // Bind Event Listeners
     //
@@ -46,14 +46,8 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
-    },
-    colorchange: function ()
-    {
-        if (navigator.userAgent.match(/(iPad|iPhone);.*CPU.*OS 7_\d/i)) {
-            $("body").addClass("ios7");
-            $('body').append('<div id="ios7statusbar"/>');
-        }
     }
+   
 
 
 };
